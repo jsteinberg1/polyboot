@@ -51,3 +51,24 @@ If you reconfigure 350 phones pointing to a single server simultaneously, fun th
 I implemented the pacing shortly after.
 
 ![danger](http://i.imgur.com/myH8Brf.png)
+
+# polyboot Unique Passwords
+Some PBXes have unique passwords for each phone.  In that case, you can use the bulk scripts to handle this scenario.
+
+## IP List:
+
+Create a file 'iplist.txt' with each phone's IP and unique password.
+
+```
+127.0.0.1,"password"
+192.168.10.1,"password2"
+192.168.10.2,"password3"
+10.81.11.22,"password4"
+```
+
+## Usage:
+```
+./polyboot_bulk_factory.py
+
+```
+
